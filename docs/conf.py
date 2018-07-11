@@ -8,7 +8,7 @@
 classname = "F5 DNS and EDNS0"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/your-class-repo"
+github_repo = "https://github.com/bwesterf5/agility_edns0_18.git"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
