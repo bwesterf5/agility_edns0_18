@@ -72,7 +72,36 @@ Follow these steps to complete this task:
 
 #. Navigate your browser to **DNS >> GSLB : WideIP**
 #. Inspect the WideIP and understand the configuration settings, LB algorithm, logging settings.
+
 #. Do you notice anything new here? Use the built in help for the explination.
 
 ..  image:: /_static/wideip.png
+
+Task – Review the Global GSLB settings for Client Subnet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task we will review the Global client subnet settings used in the GSLB configuration.
+
+Follow these steps to complete this task:
+
+#. Navigate your browser to **DNS >> Settings : GSLB: Load Balancing**
+#. Under Topology, take a look at the "Prefer Client Subnet" option... 
+#. Open the help tab and take a look at the included documentation.
+
+
+..  image:: /_static/global_gslb_client_subnet.png
+
+Task – Review the  GSLB Topology records 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task we will review the GSLB topology records used in the configuration.
+
+Follow these steps to complete this task:
+
+#. Navigate your browser to **DNS >> GSLB : Topology: Records**
+#. Review the records and understand their use. 
+
+when you check out the topology records you will see that we have created a topology record that matches the local subnet coming from the querier and then another record was added to simulate a different client subnet sent by the dig query with edns0.  
+
+..  image:: /_static/topo_records.png
 
