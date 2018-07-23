@@ -1,32 +1,29 @@
 Getting Started
 ---------------
 
-.. TODO:: Complete getting started instructions
 
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
 .. NOTE::
-	 All work for this lab will be performed exclusively from the Windows
+	 All work for this lab will be performed exclusively from the Linux
 	 jumphost. No installation or interaction with your local system is
 	 required.
 
 Lab Topology
 ~~~~~~~~~~~~
 
-.. TODO:: Complete lab topology
 
 The following components have been included in your lab environment:
 
-- 2 x F5 BIG-IP VE (v12.1)
-- 1 x F5 iWorkflow VE (v2.1)
-- 1 x Linux LAMP Webserver (xubuntu 14.04)
-- 1 x Windows Jumphost
+- 2 x F5 BIG-IP VE (v14.0) DNS GSLB engines
+- 1 x F5 BIG-IP VE (v13.1) central Router
+- 1 x Linux server (ubuntu)
+- 1 x Linux Jumphost
 
 Lab Components
 ^^^^^^^^^^^^^^
 
-.. TODO:: Complete lab components table
 
 The following table lists VLANS, IP Addresses and Credentials for all
 components:
@@ -39,10 +36,21 @@ components:
     * - **Component**
       - **VLAN/IP Address(es)**
       - **Credentials**
-    * - Sample Host
-      - - **Management:** 10.1.1.250
-        - **Internal:** 10.1.10.250
-        - **External:** 10.1.20.250
-      - ``admin``/``admin``
-
+    * - bigip-dc1
+      - - **Management:** 10.0.1.245
+        - **External:** 10.1.0.245
+      - ``admin``/``f5edns0``
+    * - bigip-dc2
+      - - **Management:** 10.0.1.246
+        - **External:** 10.2.0.245
+      - ``admin``/``f5edns0``
+    * - bigip-router
+      - - **Management:** 10.0.1.240
+      - ``admin``/``f5edns0``
+    * - Linux Jumphost
+      - - **Management:** 10.0.1.50
+      - ``ubuntu``/``supernetops``
+    * - ubuntu server
+      - - **Management:** 10.0.1.253
+      - ``ubuntu``/``supernetops``
 
