@@ -54,3 +54,21 @@ components:
       - - **Management:** 10.0.1.253
       - ``ubuntu``/``supernetops``
 
+Follow these steps to get your lab started:
+
+#. Open a browser and visit http://training.f5agility.com
+#. Enter your class number (instructor will provide this) and your student number.
+#. You should now be seeing the class portal and can now access the RDP and lab resrouces.
+
+..  image:: /_static/agility_site.png
+..  image:: /_static/class_page.png
+
+
+
+To start your lab you will want to log into the linux jumpbox.  
+From this you can then do all of the exercises in the lab.
+To log into the jump box for the lab start your session and access the jumpbox via RDP.
+Once the RDP window is open then just click to log in the "supernetops" user.  
+You should not need a password.
+
+..  image:: /_static/rdp_jumpbox.png
